@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.amazon.automation.utils.WaitUtils;
+
 
 public class AmazonHomePage {
 
@@ -21,6 +23,7 @@ public class AmazonHomePage {
     }
 
     public void enterSearchText(String productName) {
+    	WaitUtils.waitForVisibility(driver, searchBox);
         searchBox.clear();
         searchBox.sendKeys(productName);
     }

@@ -2,24 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-01T15:08:39 IST" name="Default suite" finished-at="2026-01-01T15:08:56 IST" duration-ms="17524">
+  <suite started-at="2026-01-03T16:54:54 IST" name="Default suite" finished-at="2026-01-03T16:55:05 IST" duration-ms="11316">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.amazon.automation.runners.TestRunner@4fb0f2b9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-01-01T15:08:39 IST" name="Default test" finished-at="2026-01-01T15:08:56 IST" duration-ms="17524">
-      <class name="com.amazon.automation.tests.AmazonSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.automation.tests.AmazonSearchTest@7e0b85f9]" started-at="2026-01-01T15:08:39 IST" name="setUp" finished-at="2026-01-01T15:08:50 IST" duration-ms="11238" status="PASS">
+    <test started-at="2026-01-03T16:54:54 IST" name="Default test" finished-at="2026-01-03T16:55:05 IST" duration-ms="11316">
+      <class name="com.amazon.automation.runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.amazon.automation.runners.TestRunner@4fb0f2b9]" started-at="2026-01-03T16:54:54 IST" name="setUpClass" finished-at="2026-01-03T16:54:55 IST" duration-ms="698" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@134c370e]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyProductSearch()[pri:0, instance:com.amazon.automation.tests.AmazonSearchTest@7e0b85f9]" started-at="2026-01-01T15:08:50 IST" name="verifyProductSearch" finished-at="2026-01-01T15:08:56 IST" duration-ms="5921" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.amazon.automation.runners.TestRunner@4fb0f2b9]" started-at="2026-01-03T16:54:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-03T16:55:05 IST" duration-ms="10547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product on Amazon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Amazon Product Search"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.automation.tests.AmazonSearchTest@7e0b85f9]" started-at="2026-01-01T15:08:56 IST" name="tearDown" finished-at="2026-01-01T15:08:56 IST" duration-ms="319" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.amazon.automation.runners.TestRunner@4fb0f2b9]" started-at="2026-01-03T16:55:05 IST" name="tearDownClass" finished-at="2026-01-03T16:55:05 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.amazon.automation.tests.AmazonSearchTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.amazon.automation.runners.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
