@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\kolar\AppData\Local\Temp\testng-eclipse--1159055418\testng-customsuite.xml</span>
+                    <span>C:\Users\kolar\AppData\Local\Temp\testng-eclipse--444767587\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.amazon.automation.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for a product on Amazon&quot;, &quot;Amazon Product Search&quot;)">runScenario("Search for a product on Amazon", "Amazon Product Search")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.amazon.automation.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for a product on Amazon&quot;, &quot;Amazon Product Search and Cart&quot;)">runScenario("Search for a product on Amazon", "Amazon Product Search and Cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.amazon.automation.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add product to cart from search results&quot;, &quot;Amazon Product Search and Cart&quot;)">runScenario("Add product to cart from search results", "Amazon Product Search and Cart")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,10 +132,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search for a product on Amazon&quot;, &quot;Amazon Product Search&quot;)">
-                  </a> <!-- runScenario("Search for a product on Amazon", "Amazon Product Search") -->
+                  <a name="runScenario(&quot;Search for a product on Amazon&quot;, &quot;Amazon Product Search and Cart&quot;)">
+                  </a> <!-- runScenario("Search for a product on Amazon", "Amazon Product Search and Cart") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search for a product on Amazon", "Amazon Product Search")</span>
+                  <span class="parameters">("Search for a product on Amazon", "Amazon Product Search and Cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add product to cart from search results&quot;, &quot;Amazon Product Search and Cart&quot;)">
+                  </a> <!-- runScenario("Add product to cart from search results", "Amazon Product Search and Cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add product to cart from search results", "Amazon Product Search and Cart")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -140,7 +155,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kolar\AppData\Local\Temp\testng-eclipse--1159055418\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\kolar\AppData\Local\Temp\testng-eclipse--444767587\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,16 +212,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.amazon.automation.runners.TestRunner')
-data.setCell(0, 3, 10547);
+data.setCell(0, 3, 22213);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.amazon.automation.runners.TestRunner')
+data.setCell(1, 3, 14203);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -234,16 +253,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.amazon.automation.runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@134c370e)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4acb2510)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Search for a product on Amazon", "Amazon Product Search")</span>
-                <span class="method-start">707 ms</span>
+                <span class="method-name">runScenario("Search for a product on Amazon", "Amazon Product Search and Cart")</span>
+                <span class="method-start">771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add product to cart from search results", "Amazon Product Search and Cart")</span>
+                <span class="method-start">14978 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">11260 ms</span>
+                <span class="method-start">37195 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

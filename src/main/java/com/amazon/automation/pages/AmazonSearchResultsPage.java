@@ -1,6 +1,7 @@
 package com.amazon.automation.pages;
 
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,4 +27,19 @@ public class AmazonSearchResultsPage {
     public int getResultsCount() {
         return searchResults.size();
     }
+    
+    public void clickFirstProductAndSwitchToTab() {
+        String parentWindow = driver.getWindowHandle();
+
+        searchResults.get(0).click();
+
+        Set<String> allWindows = driver.getWindowHandles();
+        for (String window : allWindows) {
+            if (!window.equals(parentWindow)) {
+                driver.switchTo().window(window);
+                break;
+            }
+        }
+    }
+
 }
